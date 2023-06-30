@@ -1,0 +1,12 @@
+<h1>Hello</h1>
+<form action="/product" method="POST">
+    <input type="text" id="name" name="title">
+    <button type="submit" onclick="add()">Add</button>
+    <script>
+        
+        function add(){
+            var msg = document.getElementById('name').value;
+            localStorage.setItem("username", msg)
+        }
+    </script>
+</form>

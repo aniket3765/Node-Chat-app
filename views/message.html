@@ -1,0 +1,14 @@
+
+    <form id="btn" action="/msg" method="post">
+        <input type="hidden" name="user" id="user">
+        <input type="text" name ="msg" id ="msg">
+        <button type="submit">click</button>  
+    </form>
+   <form action="/contact" method="post">
+    <button type="submit">contact-us</button>
+   </form>
+    <script>
+        
+        document.getElementById('user').value=localStorage.getItem('username')
+    </script>
+  
